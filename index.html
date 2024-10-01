@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piano Kit</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <header class="header"></header>
+      <div class="header__content">
+        <h2 class="header__title">Piano Kit</h2>
+        <div class="header__volume">
+          <span class="header__volume-label">Volume</span>
+          <input type="range" class="header__volume-control" />
+        </div>
+        <div class="header__notes">
+          <span class="header__notes-label">Afficher les notes</span>
+          <input type="checkbox" class="header__notes-toggle" />
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <ul class="piano">
+        <li class="piano__key piano__key--white" data-note="do">
+          <span class="piano__note">Do</span>
+        </li>
+        <li class="piano__key piano__key--black" data-note="do-sharp">
+          <span class="piano__note">Do#</span>
+        </li>
+        <li class="piano__key piano__key--white" data-note="re">
+          <span class="piano__note">Ré</span>
+        </li>
+        <li class="piano__key piano__key--black" data-note="re-sharp">
+          <span class="piano__note">Ré#</span>
+        </li>
+        <li class="piano__key piano__key--white" data-note="mi">
+          <span class="piano__note">Mi</span>
+        </li>
+        <li class="piano__key piano__key--white" data-note="fa">
+          <span class="piano__note">Fa</span>
+        </li>
+        <li class="piano__key piano__key--black" data-note="fa-sharp">
+          <span class="piano__note">Fa#</span>
+        </li>
+        <li class="piano__key piano__key--white" data-note="sol">
+          <span class="piano__note">Sol</span>
+        </li>
+        <li class="piano__key piano__key--black" data-note="sol-sharp">
+          <span class="piano__note">Sol#</span>
+        </li>
+        <li class="piano__key piano__key--white" data-note="la">
+          <span class="piano__note">La</span>
+        </li>
+        <li class="piano__key piano__key--black" data-note="la-sharp">
+          <span class="piano__note">La#</span>
+        </li>
+        <li class="piano__key piano__key--white" data-note="si">
+          <span class="piano__note">Si</span>
+        </li>
+      </ul>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <h3 class="footer__title">Created by Gad Ntenta</h3>
+      </div>
+    </footer>
+    </div>
+    <script src="script.js">
+
+    </script>
+  </body>
+</html>

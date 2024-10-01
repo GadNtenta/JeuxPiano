@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: #e0f1ff;
+}
+
+.container {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 20px;
+  width: 600px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 15px;
+  color: white;
+}
+
+.header__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header__volume,
+.header__notes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__volume-control {
+  width: 120px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.piano {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.piano__key {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s;
+}
+
+.piano__key--white {
+  background-color: white;
+  width: 60px;
+  height: 200px;
+  border: 1px solid #333;
+  border-radius: 0 0 10px 10px;
+  margin-right: 2px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.piano__key--black {
+  background-color: #333;
+  width: 40px;
+  height: 120px;
+  border-radius: 0 0 5px 5px;
+  position: absolute;
+  top: 0;
+  margin-left: -20px;
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.piano__key--black:nth-child(2) {
+  left: 45px; /* Positionnement correct de la touche Do# */
+}
+
+.piano__key--black:nth-child(4) {
+  left: 115px; /* Positionnement correct de la touche Ré# */
+}
+
+.piano__key--black:nth-child(7) {
+  left: 245px; /* Positionnement correct de la touche Fa# */
+}
+
+.piano__key--black:nth-child(9) {
+  left: 315px; /* Positionnement correct de la touche Sol# */
+}
+
+.piano__key--black:nth-child(11) {
+  left: 385px; /* Positionnement correct de la touche La# */
+}
+
+.piano__key:hover {
+  transform: translateY(4px);
+}
+
+.piano__key:active {
+  transform: translateY(8px);
+}
+
+.piano__note {
+  /* display: none; */
+  position: absolute; /* Positionnement absolu pour superposition */
+  z-index: 3; /* Met les notes au premier plan */
+  color: aqua; /* Couleur du texte */
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  font-size: 18px; /* Taille de la police */
+  bottom: 10px; /* Espace du bas */
+  left: 50%; /* Centre horizontalement */
+  transform: translateX(-50%); /* Ajuste le centrage */
+}
+ 
+.footer {
+  padding-top: 15px;
+  color: white;
+}
+
+.footer__title {
+  font-size: 14px;
+}
+
+.footer__title span {
+  color: #66ccff;
+  font-weight: 600;
+}
